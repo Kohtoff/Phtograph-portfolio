@@ -183,6 +183,27 @@ body {
   margin: 5vw 3vw;
 }
 
+.main--flexed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.avatar--centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
 .photos-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,5 +458,79 @@ body {
 .book__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.contact-me-title {
+  font-size: 48px;
+  text-align: center;
+  font-size: bold;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 50px 0;
+}
+
+.links-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #e4e4e4), color-stop(55%, transparent));
+  background-image: linear-gradient(#e4e4e4 10% 55%, transparent 55%);
+  gap: 5%;
+  padding: 50px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.links-section__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.links-section__label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .links-section__label {
+    font-size: 4vw;
+  }
+}
+
+.recall-btn {
+  margin-top: 200px;
+  margin-bottom: 70px;
+  background-color: #e4e4e4;
+  height: 160px;
+  width: 45%;
+  border-radius: 20px;
+  font-size: 3vw;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+  .recall-btn {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .recall-btn {
+    width: 75%;
+    font-size: 4vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
