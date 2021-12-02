@@ -1,0 +1,313 @@
+@import "./reset.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$X-large: 1420px;
+$large: 1110px;
+$medium: 990px;
+$small: 740px;
+$extra-small: 570px;
+$phone: 420px;
+
+body {
+  background: #1d1d1d !important;
+  font-family: "Poppins", sans-serif !important;
+  min-height: 100%;
+}
+
+.main-title {
+  display: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #e4e4e4;
+  font-weight: bold;
+  text-align: center;
+  @media screen and (max-width: $medium) {
+    display: block;
+  }
+}
+.social-links {
+  &-box {
+    width: 8%;
+    margin-left: 3%;
+    margin-right: 6%;
+    @media screen and (max-width: $large) {
+      display: none;
+    }
+
+    &--footer {
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+    align-items: center;
+  }
+  &-icon {
+    &--footer {
+      padding: 2px;
+      background-color: #1d1d1d;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+    }
+  }
+}
+.navbar {
+  background-color: transparent;
+}
+.navbar-nav {
+  align-items: baseline;
+  width: 95%;
+  justify-content: space-between;
+
+  &--footer {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+
+    @media screen and (max-width: $small) {
+      width: 95%;
+    }
+    @media screen and (max-width: $extra-small) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (max-width: $phone) {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.nav-link {
+  font-size: 30px;
+  font-weight: bold;
+
+  &--footer {
+    font-size: 20px;
+    color: #1d1d1d;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 1;
+      color: #000;
+    }
+
+    @media screen and (max-width: $extra-small) {
+      margin: 0 5px;
+    }
+  }
+
+  &--main {
+    font-size: 40px;
+    text-transform: uppercase;
+
+    &--footer {
+      font-size: 24px;
+    }
+  }
+}
+
+.main {
+  margin: 5vw 3vw;
+}
+
+.photos-box {
+  display: flex;
+  gap: 113px;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: $X-large) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.info-box {
+  background: #e4e4e4;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: $X-large) {
+    height: 600px;
+  }
+
+  &__title {
+    margin-bottom: 5vw;
+    font-size: 29px;
+    text-shadow: 0px 4px 6px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+
+  &__button {
+    background-color: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 8px;
+    padding: 31px 34px;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: black -1px 3px 20px -1px;
+    }
+  }
+}
+
+.card-container {
+  margin-top: 5vw;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 8%;
+  @media screen and (max-width: $large) {
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+  }
+}
+
+.card {
+  width: 21vw;
+  background-color: transparent !important;
+  color: #fff;
+  letter-spacing: 3px;
+  @media screen and (max-width: $X-large) {
+    width: 31vw;
+  }
+  @media screen and (max-width: $small) {
+    width: 70%;
+  }
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  }
+
+  &-img-top {
+    height: 31vw;
+
+    @media screen and (max-width: $small) {
+      height: 50vw;
+    }
+    @media screen and (max-width: $phone) {
+      height: 75vw;
+    }
+
+    &--with-effect {
+      box-shadow: #e4e4e4 -132px -47px 0px -21px;
+      @media screen and (max-width: $X-large) {
+        box-shadow: #e4e4e4 -70px -26px 0px -21px;
+      }
+    }
+  }
+  &-title {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 2vw;
+  }
+
+  &-title,
+  &-clouser-text {
+    text-transform: uppercase;
+  }
+
+  &-clouser-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2vw;
+  }
+}
+
+.footer {
+  background-color: #e4e4e4;
+}
+
+.copyrights {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 2vw 0;
+}
+
+.reviews{
+  text-align: center;
+  color: #e4e4e4;
+
+  &__title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.455em;
+  }
+  &__text{
+    font-size: 18px;
+    padding: 0 14vw;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.book{
+  width: 38%;
+  color: #fff;
+  margin: 80px auto 180px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 4vw 100px;
+  @media screen and (max-width: 780px) {
+      width: 85%;
+  }
+
+  &__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__text,
+  &__title{
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  &__btn{
+    margin-top: 30px;
+    background-color: #e4e4e4;
+    width: 83%;
+    padding: 15px 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    transition: all ease-in 0.2s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
