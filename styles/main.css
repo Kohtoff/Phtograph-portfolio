@@ -533,4 +533,115 @@ body {
     font-size: 4vw;
   }
 }
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-form {
+  position: fixed;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  background-color: #e4e4e4;
+  width: 70%;
+  padding: 3%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 465px) {
+  .modal-form {
+    width: 90%;
+    padding-top: 30px;
+  }
+}
+
+.modal-form__close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.modal-form__title {
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+}
+
+.modal-form__input {
+  border-radius: 10px;
+  border: none;
+  padding: 1.5% 1%;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.modal-form__input::-webkit-input-placeholder {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.modal-form__input:-ms-input-placeholder {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.modal-form__input::-ms-input-placeholder {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.modal-form__input::placeholder {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.modal-form__input:hover::-webkit-input-placeholder {
+  -webkit-transform: translate(-20%);
+          transform: translate(-20%);
+}
+
+.modal-form__input:hover:-ms-input-placeholder {
+  transform: translate(-20%);
+}
+
+.modal-form__input:hover::-ms-input-placeholder {
+  transform: translate(-20%);
+}
+
+.modal-form__input:hover::placeholder {
+  -webkit-transform: translate(-20%);
+          transform: translate(-20%);
+}
+
+.modal-form__btn {
+  background-color: rgba(29, 29, 29, 0.8);
+  color: #fff;
+  height: 60px;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.modal-form__btn:hover {
+  background-color: #000;
+}
 /*# sourceMappingURL=main.css.map */
